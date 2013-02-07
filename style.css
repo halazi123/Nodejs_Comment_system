@@ -1,0 +1,41 @@
+/* CSS Document */
+body {
+	background-color:white;
+}
+
+#frame {
+	width:1000px;
+	margin-top:5px;
+	margin-left:auto;
+	margin-right:auto;
+	min-height:100%;
+}
+
+#topics {
+	float:left;
+}
+
+#addtopic {
+	float:right;
+}
+
+input {
+	display:block;
+	margin-top:10px;
+	width:300px;
+}
+
+input[type="submit"] {
+	width:auto;
+}
+
+li {
+	text-align:left;
+}
+
+li:hover {
+	background-color:yellow;
+	text-decoration:underline;
+	cursor:hand;
+	cursor:pointer;
+}

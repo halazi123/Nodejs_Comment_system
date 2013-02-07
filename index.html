@@ -1,0 +1,31 @@
+<html>
+  <head>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/index.js"></script>
+
+	<link href="/style.css" rel="stylesheet" />
+	<title>CSC309 Assignment 1</title>
+  </head>
+  
+  <body>
+	<div id="frame">		
+		<div id="addtopic">
+			<h2>Share with the world</h2>
+			<form id="add">
+				<label for="topic">Topic (140 character limit)</label>
+				<input type="text" id="topic" name="topic" maxlength="140" /><br>
+				<label for="link">Topic Link</label>
+				<input type="text" id="addlink" name="link" /><br>
+				<input type="submit" value="Share My Topic"/>
+			</form>
+		</div>
+		
+		<div id="topics">
+			<h2>Topics</h2>
+			<ol id="topiclist">
+			</ol>
+		</div>
+	</div>
+    
+  </body>
+</html>
