@@ -10,14 +10,22 @@
   <body>
 	<div id="frame">		
 		<div id="addtopic">
-			<h2>Share with the world</h2>
+			<h2 style="text-align:center">Share With The World</h2>
 			<form id="add">
 				<label for="topic">Topic (140 character limit)</label>
-				<input type="text" id="topic" name="topic" maxlength="140" /><br>
+				<input type="text" id="topic" name="topic" maxlength="140" required/><br>
 				<label for="link">Topic Link</label>
-				<input type="text" id="addlink" name="link" /><br>
+				<input type="text" id="addlink" name="link" value="http://" required/><br>
 				<input type="submit" value="Share My Topic"/>
 			</form>
+			<div>
+				<h3>Usage Intructions</h3>
+				<p>1. Use the form above to create new topics</p>
+				<p>2. Click on the blue reply to comment</p>
+				<p>3. Click on the topic to display its replies</p>
+				<p>4. Click on the reply content to display its replies</p>
+				<p>5. Click on the thumb-up to vote</p>
+			</div>
 		</div>
 		
 		<div id="topics">
@@ -25,6 +33,7 @@
 			<ol id="topiclist">
 			</ol>
 		</div>
+		<br style="clear:both">
 	</div>
     
   </body>

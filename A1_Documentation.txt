@@ -1,0 +1,36 @@
+Data structures:
+
+All topics submitted by users are stored in a 1 dimensional array "var topics = [];".
+
+Each topic JSON structure has 5 fields: 
+
+1. id: the unique id of the topic.
+2. topic: the topic text
+3. link: the link text
+4. vote: the total number of votes received by the topic's replies
+5. reply: a 1 dimensional array containing all the topic's replies.
+
+Each reply JSON structure also has 5 fields:
+
+1. id: the unique id of the reply.
+2. pid: the id of the topic that the reply belongs to
+3. replytext: the reply text
+4. vote: the total number of votes received by the reply
+5. reply: a 1 dimensional array containing all the reply's replies.
+
+The topics and replies form a tree structure. 
+A recursive function is used to traverse through it.
+
+All user submission is done by using jQuery.ajax() with POST method.
+The server verifies the method, then parses the content of the submission,
+then creates a new topic/reply based on the url.
+
+All retrieving is done by using jQuery.get() which is a GET method.
+The server verifies the method, then retrieves the topic/reply based on the url.
+
+To populate the page using only URLs, GET method is used.
+The server parses the url, and then creates a new topic/reply based on the url.
+
+To sort the topics/replies based on votes, a JQuery function searches the existing
+topics/replies and retrieves their votes, then it adds the new topic/reply element
+before the first topic/reply that has less votes.

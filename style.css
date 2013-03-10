@@ -1,22 +1,32 @@
 /* CSS Document */
 body {
 	background-color:white;
+	background-image:url("http://www.dvd-ppt-slideshow.com/images/ppt-background/background-15.jpg");
+	background-repeat:repeat;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 #frame {
-	width:1000px;
+	width:80%;
 	margin-top:5px;
 	margin-left:auto;
 	margin-right:auto;
-	min-height:100%;
+	background-image:url("http://www.win7wallpapers.com/wallpapers/sky_blue_background-1920x1080.jpg");
+	/*background-image:url("http://www.dvd-ppt-slideshow.com/images/ppt-background/background-15.jpg");*/
+	background-repeat:repeat;
 }
 
 #topics {
 	float:left;
+	word-wrap:break-word;
 }
 
 #addtopic {
 	float:right;
+	border:grey groove 1px;
+	border-radius:5px;
+	padding-left:5px;
+	padding-right:5px;
 }
 
 input {
@@ -29,13 +39,35 @@ input[type="submit"] {
 	width:auto;
 }
 
+ol {
+	width:600px;
+}
+
 li {
+	margin-bottom:10px;
 	text-align:left;
 }
 
-li:hover {
-	background-color:yellow;
+.clickable:hover {
 	text-decoration:underline;
 	cursor:hand;
 	cursor:pointer;
+}
+
+.replydiv {
+	margin-left:20px;
+}
+
+div {
+	border:grey groove 1px;
+	border-radius:5px;
+	padding:3px;
+	margin:3px;
+}
+a {
+	color:blue;
+}
+
+.vote {
+	font-size:small;
 }
